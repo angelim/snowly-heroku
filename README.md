@@ -12,7 +12,7 @@ Use the Heroku Button __or__ clone this repo and set it up for Heroku.
 
 The environment variable pointing to the Schema Resolver will default to `/app/schemas`. You can change that variable in Heroku's app settings to an external static site(eg. An S3 bucket).
 
-Uploading schemas do Heroku:
+Uploading schemas to Heroku:
 
 ```bash
 heroku git:clone -a <YOUR-APP-NAME>
