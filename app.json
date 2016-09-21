@@ -10,8 +10,8 @@
       "description": "The resolver path can be local or external to Heroku. "
     },
     "SNOWLY_DEBUG": {
-      "value": 'true',
-      "description": "Must Snowly start in Debug Mode?"
+      "value": "true",
+      "description": "Start in Debug Mode?"
     }
   },
   "buildpacks": [
