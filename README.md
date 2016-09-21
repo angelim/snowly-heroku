@@ -4,7 +4,7 @@ More then often you'll be working with a team when implementing Snowplow trackin
 
 ## Installation
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?env[DEVELOPMENT_IGLU_RESOLVER_PATH]=/app/schemas/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ### Uploading Schemas
 
