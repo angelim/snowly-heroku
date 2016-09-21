@@ -11,10 +11,10 @@ More then often you'll be working with a team when implementing Snowplow trackin
 When you use the "Deploy to Heroku button" the environment variable pointing to the schema resolver will be `/app/schemas`. You can either change that variable in Heroku's app settings to an external static site(eg. An S3 bucket) or clone the heroku's repo for the app and setup the resolver under the `schemas` folder.
 
 ```bash
-git clone https://git.heroku.com/[HEROKU APP NAME].git
+git clone https://git.heroku.com/desolate-river-28755.git
 ```
 
-Heroku will provide the App Name during the installation process. Use the heroku command-line [toolset](https://devcenter.heroku.com/articles/getting-started-with-ruby#set-up) to deploy new schemas.
+Heroku will provide the App Name during the installation process. Use the heroku [command-line](https://devcenter.heroku.com/articles/heroku-command-line) to deploy new schemas.
 
 ### Example
 
