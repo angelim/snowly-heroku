@@ -43,7 +43,7 @@ git push heroku master
 ```
 |-- schemas
   |-- com.mycompany
-    |-- user
+    |-- user_context
       |-- jsonschema
         |-- 1-0-0
         |-- 1-0-1
