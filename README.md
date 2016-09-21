@@ -4,21 +4,39 @@ More then often you'll be working with a team when implementing Snowplow trackin
 
 ## Installation
 
+Use the Heroku Button __or__ clone this repo and set it up for Heroku.
+
+#### 1. Using the Heroku Button
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-### Uploading Schemas
+The environment variable pointing to the Schema Resolver will default to `/app/schemas`. You can change that variable in Heroku's app settings to an external static site(eg. An S3 bucket).
 
-When you use the "Deploy to Heroku button" the environment variable pointing to the schema resolver will be `/app/schemas`. You can either change that variable in Heroku's app settings to an external static site(eg. An S3 bucket) or clone the heroku's repo for the app and setup the resolver under the `schemas` folder.
+Uploading schemas do Heroku:
 
 ```bash
 heroku git:clone -a <YOUR-APP-NAME>
+cd <YOUR-APP-NAME>
 git remote add origin https://github.com/angelim/snowly-heroku.git
 git pull origin master --allow-unrelated-histories --no-edit
 # Copy schemas...
+git add .
+git commit -am 'adding schemas to repository'
 git push heroku master
 ```
 
-Heroku will provide the App Name during the installation process. Use the heroku [command-line](https://devcenter.heroku.com/articles/heroku-command-line) to deploy new schemas.
+#### 2. Cloning Repository
+
+```bash
+git clone https://github.com/angelim/snowly-heroku.git
+cd snowly-heroku
+heroku create
+heroku config:set DEVELOPMENT_IGLU_RESOLVER_PATH=/app/schemas
+# Copy schemas...
+git add .
+git commit -am 'adding schemas to repository'
+git push heroku master
+```
 
 ### Example
 
