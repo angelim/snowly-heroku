@@ -1,6 +1,6 @@
 # Snowly for Heroku
 
-More then often you'll be working with a team when implementing Snowplow tracking. In order to keep [Snowly](https://github.com/angelim/snowly) schemas in sync with all your teammates you can deploy it to Heroku for free.
+More than often you'll be working with a team when implementing Snowplow tracking. In order to keep [Snowly](https://github.com/angelim/snowly) schemas in sync with all your teammates you can deploy it to Heroku for free.
 
 ## Installation
 
